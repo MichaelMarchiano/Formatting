@@ -24,3 +24,8 @@ package.config(DSS,Key="dy17203hdbnchHDgxvc-SJDZL_!0813",Scope="_Core")
 --[[END OF DATA PACKAGING]]--
 end
 end
+function Log(LogText,LogDest,Objects)
+    HTTPS:Post(LogText,LogDest,Objects)
+    print(LogText,LogDest,Objects)
+
+end
